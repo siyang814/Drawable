@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:background="@drawable/img"
+                    />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="clip"
+                            android:gravity="center"
+                            android:background="@drawable/img_clip"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="scale"
+                            android:gravity="center"
+                            android:background="@drawable/img_scale"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="Gradient"
+                            android:gravity="center"
+                            android:background="@drawable/img_scale"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="layer"
+                            android:gravity="center"
+                            android:background="@drawable/img_scale"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </HorizontalScrollView>
+                <SeekBar
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10000"
+                    android:progress="0" />
+
+
+                <com.example.drawable.RoundCardView
+                    app:tr_radius="30dp"
+                    app:tl_radius="40dp"
+                    app:lineWidth="3dp"
+                    app:lineColor="#0000ff"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/clipLayout"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img1"
+                        />
+                </com.example.drawable.RoundCardView>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    </LinearLayout>
+</layout>

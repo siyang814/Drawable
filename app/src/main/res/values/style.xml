@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundCardView">
+
+        <attr name="tl_radius" format="dimension" />
+        <attr name="tr_radius" format="dimension" />
+        <attr name="bl_radius" format="dimension" />
+        <attr name="br_radius" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="string"/>
+
+    </declare-styleable>
+
+</resources>
