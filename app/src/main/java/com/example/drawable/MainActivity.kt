@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+//        var b = false
+//        if ( b )
+//        Glide.with(this).load("").into(binding.imageView)
 
         binding.button.setOnClickListener {
             var transition = binding.imageView.background as TransitionDrawable?
@@ -35,6 +38,8 @@ class MainActivity : AppCompatActivity() {
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
                 clipDrawable?.level = p1
                 scaleDrawable?.level = p1
+                var scale = p1 / 10000f
+                binding.button.scaleX = scale
             }
             override fun onStartTrackingTouch(p0: SeekBar?) {}
             override fun onStopTrackingTouch(p0: SeekBar?) {}
